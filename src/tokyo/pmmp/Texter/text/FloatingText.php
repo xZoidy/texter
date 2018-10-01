@@ -260,7 +260,7 @@ class FloatingText extends Position implements Text {
 
   public function sendToPlayer(Player $player, int $type = Text::SEND_TYPE_ADD): FloatingText {
     $pk = $this->asPacket($type, $this->isOwner($player));
-    $player->dataPacket($pk);
+    $player->sendDataPacket($pk);
     return $this;
   }
 

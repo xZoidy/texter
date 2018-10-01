@@ -37,7 +37,7 @@ use tokyo\pmmp\Texter\Core;
  */
 class CheckUpdateTask extends AsyncTask {
 
-  public function onRun() {
+  public function onRun(): void {
     $curl = curl_init();
     curl_setopt_array($curl, [
       CURLOPT_URL => "https://api.github.com/repos/fuyutsuki/Texter/releases",
@@ -56,7 +56,7 @@ class CheckUpdateTask extends AsyncTask {
     $this->setResult($data);
   }
 
-  public function onCompletion(Server $server){
+  public function onCompletion(): void {
     $core = Core::get();
     if ($core->isEnabled()) {
       $data = $this->getResult();
