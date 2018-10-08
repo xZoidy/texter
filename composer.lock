@@ -320,16 +320,16 @@
         },
         {
             "name": "pocketmine/pocketmine-mp",
-            "version": "dev-master",
+            "version": "3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmmp/PocketMine-MP.git",
-                "reference": "74486d68803a27bfb0ab2c38adca5ef711e7b88e"
+                "reference": "a66dd4a7d95c49792d39c7e70442b1ee4b855988"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmmp/PocketMine-MP/zipball/74486d68803a27bfb0ab2c38adca5ef711e7b88e",
-                "reference": "74486d68803a27bfb0ab2c38adca5ef711e7b88e",
+                "url": "https://api.github.com/repos/pmmp/PocketMine-MP/zipball/a66dd4a7d95c49792d39c7e70442b1ee4b855988",
+                "reference": "a66dd4a7d95c49792d39c7e70442b1ee4b855988",
                 "shasum": ""
             },
             "require": {
@@ -381,10 +381,10 @@
             "description": "A server software for Minecraft: Pocket Edition written in PHP",
             "homepage": "https://pmmp.io",
             "support": {
-                "source": "https://github.com/pmmp/PocketMine-MP/tree/master",
+                "source": "https://github.com/pmmp/PocketMine-MP/tree/3.2.4",
                 "issues": "https://github.com/pmmp/PocketMine-MP/issues"
             },
-            "time": "2018-09-30T13:43:55+00:00"
+            "time": "2018-10-07T18:32:04+00:00"
         },
         {
             "name": "pocketmine/raklib",
@@ -463,16 +463,16 @@
         },
         {
             "name": "pocketmine/spl",
-            "version": "0.3.1",
+            "version": "0.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pmmp/SPL.git",
-                "reference": "ca3912099543ddc4b4b14f40e258d84ca547dfa5"
+                "reference": "7fd53857cd000491ba69e8db865792a024dd2c49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pmmp/SPL/zipball/ca3912099543ddc4b4b14f40e258d84ca547dfa5",
-                "reference": "ca3912099543ddc4b4b14f40e258d84ca547dfa5",
+                "url": "https://api.github.com/repos/pmmp/SPL/zipball/7fd53857cd000491ba69e8db865792a024dd2c49",
+                "reference": "7fd53857cd000491ba69e8db865792a024dd2c49",
                 "shasum": ""
             },
             "type": "library",
@@ -489,9 +489,9 @@
             ],
             "description": "Standard library files required by PocketMine-MP and related projects",
             "support": {
-                "source": "https://github.com/pmmp/SPL/tree/0.3.1"
+                "source": "https://github.com/pmmp/SPL/tree/master"
             },
-            "time": "2018-06-09T17:30:36+00:00"
+            "time": "2018-08-12T15:17:39+00:00"
         }
     ],
     "packages-dev": [],
