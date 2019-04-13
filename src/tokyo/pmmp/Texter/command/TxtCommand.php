@@ -47,11 +47,11 @@ use tokyo\pmmp\Texter\i18n\Lang;
 class TxtCommand extends Command {
 
   public function __construct() {
-    $this->setPermission("texter.command.txt");
+    $this->setPermission("waypoint.command.waypoint");
     $cl = Lang::fromConsole();
-    $description = $cl->translateString("command.txt.description");
-    $usage = $cl->translateString("command.txt.usage");
-    parent::__construct("txt", $description, $usage);
+    $description = $cl->translateString("command.waypoint.description");
+    $usage = $cl->translateString("command.waypoint.usage");
+    parent::__construct("waypoint", $description, $usage);
   }
 
   public function execute(CommandSender $sender, string $commandLabel, array $args) {
@@ -88,12 +88,12 @@ class TxtCommand extends Command {
               break;
 
             default:
-              $message = $lang->translateString("command.txt.usage");
+              $message = $lang->translateString("command.waypoint.usage");
               $sender->sendMessage(Core::PREFIX . $message);
               break;
           }
         }else {
-          $message = $lang->translateString("command.txt.usage");
+          $message = $lang->translateString("command.waypoint.usage");
           $sender->sendMessage(Core::PREFIX . $message);
         }
       }else {
