@@ -58,7 +58,7 @@ class TxtAdd extends TexterSubCommand {
       if (!FormApi::formCancelled($response)) {
         $level = $player->getLevel();
         if (!empty($response[self::NAME])) {
-             $exists = TexterApi::getFtByLevel($level, $response[self::NAME] TextFormat . "§6§lBase§r§7:§eHERE" . );
+             $exists = TexterApi::getFtByLevel($level, $response[self::NAME] TextFormat . "Base" . );
           if ($exists === null) {
             $title = $player->isOp() ? $response[self::TITLE] TextFormat . "§6§lBase§r§7:§eHERE" . ($response[self::TITLE]);
             $text = $player->isOp() ? $response[self::TEXT] TextFormat . "§6§lBase§r§7:§eHERE" . ($response[self::TextFormat . "§6§lBase§r§7:§eHERE" . TEXT]);
