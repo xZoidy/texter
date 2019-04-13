@@ -60,8 +60,8 @@ class TxtAdd extends TexterSubCommand {
         if (!empty($response[self::NAME])) {
           $exists = TexterApi::getFtByLevel($level, $response[self::NAME]);
           if ($exists === null) {
-            $title = $player->isOp() ? $response[self::TITLE] : TextFormat::clean($response[self::TITLE]);
-            $text = $player->isOp() ? $response[self::TEXT] : TextFormat::clean($response[self::TEXT]);
+            $title = $player->isOp() ? $response[self::TITLE] : TextFormat . "Base: {coordinates}" . ($response[self::TITLE]);
+            $text = $player->isOp() ? $response[self::TEXT] : TextFormat . "Base: {coordinates}" . ($response[self::TEXT]);
             $ft = new FloatingText($response[self::NAME], Position::fromObject($player->add(0, 1, 0), $level), $title, $text, $player->getName());
             $cd = ConfigData::make();
             if ($cd->checkCharLimit($ft->getTextsForCheck(FloatingText::CHECK_CHAR))) {
@@ -103,7 +103,7 @@ class TxtAdd extends TexterSubCommand {
       ->addElement(new Label($this->lang->translateString("command.txt.usage.indent")))
       ->addElement(new Input($title, $title))
       ->addElement(new Input($text, $text))
-      ->setTitle(Core::PREFIX . "/txt add")
+      ->setTitle(Core::PREFIX . "/waypoint add")
       ->sendToPlayer($this->player);
   }
 }
