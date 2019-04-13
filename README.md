@@ -19,7 +19,7 @@ Select Language: [English](#eng), [日本語](#jpn)
 # English
 
 <!--
-**This branch is under development. It may have many bugs.**  
+**This branch is under development. It may have many bugs!!!!!!!!!!.**  
 -->
 
 ## Texter
