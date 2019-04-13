@@ -49,7 +49,7 @@ class TxtCommand extends Command {
   public function __construct() {
     $this->setPermission("waypoint.command.waypoint");
     $cl = Lang::fromConsole();
-    $description = $cl->translateString("command.waypoint.description");
+    $description = $cl->translateString("add a waypoint, /waypoint add");
     $usage = $cl->translateString("command.waypoint.usage");
     parent::__construct("waypoint", $description, $usage);
   }
