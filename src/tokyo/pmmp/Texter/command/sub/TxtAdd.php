@@ -103,7 +103,7 @@ class TxtAdd extends TexterSubCommand {
       ->addElement(new Label($this->lang->translateString("command.txt.usage.indent")))
       ->addElement(new Input($title, $title))
       ->addElement(new Input($text, $text))
-      ->setTitle(Core::PREFIX . "/waypoint add")
+      ->setTitle(Core::PREFIX . "waypoint add")
       ->sendToPlayer($this->player);
   }
 }
