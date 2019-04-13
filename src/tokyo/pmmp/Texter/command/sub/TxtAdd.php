@@ -60,8 +60,8 @@ class TxtAdd extends TexterSubCommand {
         if (!empty($response[self::NAME])) {
           $exists = TexterApi::getFtByLevel($level, $response[self::NAME]);
           if ($exists === null) {
-            $title = $player->isOp() ? $response[self::TITLE] : TextFormat . "§6§lBase§r§7:§eHERE" . ($response[self::TITLE]);
-            $text = $player->isOp() ? $response[self::TEXT] : TextFormat . "§6§lBase§r§7:§eHERE" . ($response[self::TEXT]);
+            $title = $player->isOp() ? $response[self::TITLE] TextFormat . "§6§lBase§r§7:§eHERE" . ($response[self::TITLE]);
+            $text = $player->isOp() ? $response[self::TEXT] TextFormat . "§6§lBase§r§7:§eHERE" . ($response[self::TextFormat . "§6§lBase§r§7:§eHERE" . TEXT]);
             $ft = new FloatingText($response[self::NAME], Position::fromObject($player->add(0, 1, 0), $level), $title, $text, $player->getName());
             $cd = ConfigData::make();
             if ($cd->checkCharLimit($ft->getTextsForCheck(FloatingText::CHECK_CHAR))) {
